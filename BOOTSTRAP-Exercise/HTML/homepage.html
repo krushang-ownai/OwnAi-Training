@@ -14,28 +14,27 @@
 </head>
 
 <body>
-    <header class="headerBackground">
-        <nav class="navbar navbar-expand-md p-4">
-            <div class="container-lg">
-                <div class="navbar-brand">
-                    <img class="brandImage" src="../ASSETS/ownai.png" alt="">
+    <header class="headerSection">
+        <nav class="navbar navbar-expand-lg navbarMenu p-lg-4 p-3">
+            <div class="container-fluid">
+                <div class="navbar-brand ms-5">
+                    <img class="brandImage" src="../ASSETS/ownai.png" alt="ownailogo">
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon-color"><i class="fa-solid fa-bars"></i></span>
+                    <span class="navbarToggleIcon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto headerNavigationLinks">
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="#">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="#">NFT</a></li>
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="#">Token</a></li>
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="#">RoadMap</a></li>
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="../HTML/pricingpage.html">Pricing</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link navbarLinks" href="#">Docs</a></li>
+                    <ul class="navbar-nav ms-auto navbarNavigation">
+                        <li class="nav-item"><a class="navbarLinks" href="#">Dashboard</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">NFT</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Token</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">RoadMap</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Docs</a></li>
                     </ul>
-                    <div class="d-flex ms-auto gap-2 navbarButtons">
+                    <div class="d-flex ms-auto me-lg-4 gap-3 navbarButtons">
                         <button class="signinButton text-capitalize" type="submit">Sign in</button>
                         <button class="signupButton text-capitalize" type="submit">Sign up</button>
                     </div>
@@ -196,32 +195,40 @@
         <!-- Grid Section Ends Here -->
 
         <!-- Info Section Starts -->
-         <section class="infoSection">
+        <section class="infoSection">
             <div class="container">
 
                 <!-- Info Section Content  -->
                 <div class="row ms-lg-2">
                     <div class="col-12 col-lg-7 me-lg-auto ms-2 me-2 text-capitalize">
                         <h4 class="infoContentHeading">Making blockchain data accessible</h4>
-                        <p class="infoContentDescription">Blockchain data is hard to query, index and analyse. It requires significant engineering and hardware resources. Whalemap takes on this hard job so others don’t have to develop proprietary solutions for on-chain analytics. Leveraging blockchains to make that data accessible is the next step.</p>
+                        <p class="infoContentDescription">Blockchain data is hard to query, index and analyse. It
+                            requires significant engineering and hardware resources. Whalemap takes on this hard job so
+                            others don’t have to develop proprietary solutions for on-chain analytics. Leveraging
+                            blockchains to make that data accessible is the next step.</p>
                         <img class="barImage" src="../ASSETS/rectangleBar.png" alt="Rectangle Bar">
                     </div>
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-12 col-lg-7 justify-content-end ms-lg-auto ms-2 me-2 text-capitalize text-lg-start text-sm-center">
+                    <div
+                        class="col-12 col-lg-7 justify-content-end ms-lg-auto ms-2 me-2 text-capitalize text-lg-start text-sm-center">
                         <h4 class="infoContentHeading">Supported networks</h4>
-                        <p class="infoContentDescription">In legacy markets, institutions have access to resources that are unavailable to the general public. But with the advent of the blockchain, financial data should no longer just be available to a select few. We at Whalemap believe that this data belongs to everyone, not just a handful of large institutions.</p>
+                        <p class="infoContentDescription">In legacy markets, institutions have access to resources that
+                            are unavailable to the general public. But with the advent of the blockchain, financial data
+                            should no longer just be available to a select few. We at Whalemap believe that this data
+                            belongs to everyone, not just a handful of large institutions.</p>
                         <img class="barImage" src="../ASSETS/rectangleBar.png" alt="Rectangle Bar">
                     </div>
                 </div>
             </div>
 
             <!-- Floating Images  -->
-                <img class="position-absolute infoimageLeft float-lg-end" src="../ASSETS/ovalBaseLarge.png" alt="Semi-CircleImage">
-                <img class="visually-hidden" src="../ASSETS/ovalBaseLargeRight.png" alt="">
+            <img class="position-absolute infoimageLeft float-lg-end" src="../ASSETS/ovalBaseLarge.png"
+                alt="Semi-CircleImage">
+            <img class="visually-hidden" src="../ASSETS/ovalBaseLargeRight.png" alt="">
 
-         </section>
+        </section>
 
     </div>
 
@@ -230,24 +237,23 @@
 
 
     <!-- Footer Section -->
-    <footer class="footerLayout">
-        <nav class="navbar navbar-expand-lg p-4 ">
+    <footer class="footerSection">
+        <nav class="navbar navbar-expand-lg p-3 p-lg-4">
             <div class="container-fluid">
-                <div class="ms-auto me-auto d-flex justify-content-center align-items-center">
+                <div class="ms-auto me-auto d-flex justify-content-center align-items-center ms-lg-5">
                     <img class="brandImage" src="../ASSETS/ownai.png" alt="">
                 </div>
 
-                <div class="navbar-collapse mt-3" id="navbarFooter">
-                    <ul class="navbar-nav ms-auto footerNavigation">
-                        <li class="nav-item"><a class="nav-link footerNavigationLinks" href="#">Companey</a></li>
-                        <li class="nav-item"><a class="nav-link footerNavigationLinks" href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link footerNavigationLinks" href="#">Privacy Policy</a></li>
-                        <li class="nav-item"><a class="nav-link footerNavigationLinks" href="#">Cookie Policy</a></li>
-                        <li class="nav-item"><a class="nav-link footerNavigationLinks" href="#">Contact Us</a></li>
+                <div class="navbar-collapse" id="navbarFooter">
+                    <ul class="navbar-nav footerNav ms-auto text-center">
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Companey</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Terms & Conditions</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Privacy Policy</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Cookie Policy</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Contact Us</a></li>
                     </ul>
 
-                    <div class="d-flex justify-content-center align-items-center ms-auto">
+                    <div class="footerIconSection d-flex ms-auto gap-2 me-lg-5">
                         <a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
