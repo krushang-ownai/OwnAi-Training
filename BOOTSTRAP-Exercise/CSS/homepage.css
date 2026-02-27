@@ -247,7 +247,7 @@ button:hover {
 /* Info Section Starts here */
 
 .infoSection {
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .infoSection .infoContentHeading {
@@ -268,21 +268,23 @@ button:hover {
 .infoSection .floatimageLeft {
     height: auto;
     padding: 0;
-    top: 320%;
+    top: 265%;
     left: 0;
-    width: 110px;
+    width: 140px;
 }
 
 .infoSection .floatimageRight {
     height: auto;
     padding: 0;
-    top: 355%;
+    top: 290%;
     right: 0;
-    width: 140px;
+    width: 180px;
 }
+
 .liveProductSection {
-    margin: 25px auto;
+    margin: 130px auto;
 }
+
 .liveProductSection .liveHeading{
     font-size: 48px;
     font-weight: 700;
@@ -290,13 +292,72 @@ button:hover {
 }
 
 .liveProductSection .chartsButton{
-    padding: 16px 60px;
+    padding: 24px 50px;
     background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradient-tertery-color));
     color: var(--bs-text-primary-color);
     border: 1px solid var(--bs-btn-bg-gradient-primary-color);
     border-radius: 12px;
     font-size: 24px;
     font-weight: 600;
+}
+
+.liveProductSection .chartsButton .chartsButtonImg{
+    margin-left: 8px;
+}
+
+.productLineImg{
+    position: absolute;
+    left: 0;
+}
+
+/* Carousel Section */
+
+.carouselSection{
+    margin: 120px auto;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 360px;
+    height: 380px;
+}
+
+.carouselSection .carouselHeading{
+    color: var(--bs-text-primary-color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.carouselSection  .carouselDescription{
+    color: var(--bs-text-primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.carouselControlIconPrevious{
+    border: 1px solid wheat;
+    border-radius: 50px;
+    height: 56px;
+    width: 56px;
+    background-color: var(--bs-bg-body-color);
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+}
+
+.carouselControlIconNext{
+    border: 1px solid wheat;
+    border-radius: 56px;
+    height: 56px;
+    width: 56px;
+    background-color: var(--bs-bg-body-color);
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
 }
 
 
@@ -308,10 +369,12 @@ button:hover {
 @media screen and (max-width:400px) {
 
     /* HeroSection */
-
+    .homePageLayout{
+        overflow: hidden;
+    }
     .homePageLayout .homeHeroSection {
         height: 50vh;
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
@@ -435,6 +498,53 @@ button:hover {
     .infoimageLeft {
         display: none;
     }
+
+    /* Live Product Section */
+    .liveProductSection{
+        margin-top: 20px;
+    }
+
+    .liveProductSection .liveHeading{
+        font-size: 24px;
+        margin: 14px auto;
+    }
+    .liveProductSection .chartsButton{
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+    .liveProductSection .chartsButton .chartsButtonImg{
+        height: 14px;
+        width: 12px;
+    }
+    .productLineImg{
+        display: none;  
+    }
+
+    .livedot{
+        display: none;
+    }
+
+
+    /* Carousel Section */
+    .carouselSection{
+        margin-top: 15px;
+    }
+
+
+    .carouselControlIconPrevious{
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 2%;
+    }
+
+    .carouselControlIconNext{
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 20%;
+    }
+
 }
 
 
@@ -548,6 +658,47 @@ button:hover {
     .infoimageLeft {
         display: none;
     }
+
+
+    .liveProductSection .liveHeading{
+        font-size: 24px;
+        margin: 14px auto;
+    }
+    .liveProductSection .chartsButton{
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+    .liveProductSection .chartsButton .chartsButtonImg{
+        height: 14px;
+        width: 12px;
+    }
+    .productLineImg{
+        display: none;  
+    }
+
+    .livedot{
+        display: none;
+    }
+
+    /* Carousel Section */
+    .carouselSection{
+        margin-top: 15px;
+    }
+
+
+    .carouselControlIconPrevious{
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 2%;
+    }
+
+    .carouselControlIconNext{
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        left: 20%;
+    }    
 
 }
 
@@ -664,7 +815,47 @@ button:hover {
 
     .infoimageLeft {
         top: 240%;
+    }
 
+
+    /* Live Product Section */
+
+    .liveProductSection{
+        margin: 60px auto;
+    }
+
+    .liveProductSection .liveHeading{
+        font-size: 36px;
+        
+    }
+    .liveProductSection .chartsButton{
+        padding: 18px 40px;
+        font-size: 14px;
+    }
+    .liveProductSection .chartsButton .chartsButtonImg{
+        height: 18px;
+        width: 12px;
+    }
+    .productLineImg{
+        width: 36vw; 
+    }
+
+    /* Carousel Section */
+
+    .carouselSection{
+        margin-top: 30px;
+    }
+
+    .carousel-inner{
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .carouselControlIconPrevious{
+        left: 8%;
+    }
+    .carouselControlIconNext{
+        left: 20%;
     }
 
 }
@@ -780,6 +971,19 @@ button:hover {
     .infoimageLeft {
         top: 240%;
 
+    }
+
+
+
+
+    /* Live Product Section */
+
+    .liveProductSection .liveHeading{
+        font-size: 40px;
+    }
+
+    .productLineImg{
+        width: 40vw; 
     }
 
 }
