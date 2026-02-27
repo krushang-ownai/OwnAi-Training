@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --bs-dark-blue-bg-color: #014c93;
+    --bs-gray-text-color: #DDE2FF;
+    --bs-lightgray-text-color: #c1c1c1;
+    --bs-gray-color: #A6A6A6;
+
+    --bs-card-bg-blue-color: #0C2F50;
+    --bs-card-text-gray-color: #FDFDFD;
+
+    --bs-bg-primary-color: #001A33;
+    --bs-bg-secondary-color: #091C2D;
+    --bs-bg-body-color:#021323;
+
+    --bs-home-hero-bg-primary: #021323;
+    --bs-home-hero-bg-secondary:#014c93;
+    
+    --bs-text-primary-color: #FFFFFF;
+    --bs-text-secondary-color: #000;
+    --bs-text-active-color: #06cde3;
+
+    --bs-footer-link-text-color: #4A5864;
+    --bs-footer-icon-color: #ffffff94;
+
+    --bs-btn-primary-border-color:#14B6E4;
+    --bs-btn-bg-gradient-primary-color: #06CDE3;
+    --bs-btn-bg-gradiant-secondary-color: #0D9DC5;
+
+    --bs-font-family: "Inter", sans-serif;
+}

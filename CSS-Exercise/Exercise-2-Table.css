@@ -1,0 +1,57 @@
+:root{
+    --primary-bg-color: rgb(31, 62, 201);
+    --secondary-bg-color: rgba(211, 211, 211, 0.788);
+    --primary-txt-color: rgba(172, 9, 31, 0.637);
+    --secondary-txt-color:rgba(20, 18, 18, 0.925);
+    --third-txt-color: rgba(248, 248, 248, 0.945);
+    --border-primary-color: rgb(112, 109, 109);
+}
+ 
+.pageHeading{
+    margin: 20px 0;
+    color: var(--primary-txt-color);
+    text-align: center;
+}
+
+.studentDataTableComponent .studentDataTable{
+    margin: auto;
+    width: 80vw;
+    border-collapse: collapse;
+}
+
+.studentDataTableComponent .studentDataTable .tableHeading{
+    background-color: var(--primary-bg-color);
+    border: .5px solid var(--border-primary-color);
+}
+
+/* Font size in px units */
+.studentDataTableComponent .studentDataTable .tableHeading .tableHeadingRow .tableHeadingValue{
+    padding: 15px;
+    color: var(--third-txt-color);
+    border: 1px solid var(--border-primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.studentDataTableComponent .studentDataTable .tableData{
+    padding: 10px;
+}
+
+.studentDataTableComponent .studentDataTable .tableData .tableDataRow:nth-child(even){
+    background-color: var(--secondary-bg-color);
+}
+
+.studentDataTableComponent .studentDataTable .tableData .tableDataRowValue{
+    padding: 20px;
+    border: .5px solid var(--border-primary-color);
+    color: var(--secondary-txt-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 758px){
+    .studentDataTableComponent{    
+        overflow-x: scroll;
+    }
+}    

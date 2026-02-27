@@ -1,0 +1,953 @@
+@import url(../CSS/style.css);
+@import url(../CSS/header.css);
+@import url(../css/footer.css);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-font-family);
+    background-color: var(--bs-bg-body-color);
+}
+
+.textPrimary {
+    color: var(--bs-text-primary-color);
+}
+
+.textActive {
+    color: var(--bs-text-active-color);
+}
+
+.footerLayout {
+    position: inherit;
+}
+
+
+/* Hero Section Layout */
+
+.homePageLayout {
+    background-color: var(--bs-bg-body-color);
+}
+
+.homePageLayout .homeHeroSection {
+    height: 65vh;
+    background-image: linear-gradient(var(--bs-home-hero-bg-secondary), var(--bs-home-hero-bg-primary));
+}
+
+
+.homePageLayout .homeHeroSection .heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText {
+    margin-top: 14%;
+    width: 70%;
+    align-items: center;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+    color: var(--bs-gray-text-colo);
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 60%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.homePageLayout .homeHeroSection .heroContent .heroButtons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button {
+    padding: 18px 60px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(.9);
+    transition-duration: .7s;
+}
+
+
+.homePageLayout .homeHeroSection .heroContent .heroButtons .heroButton1 {
+    background-color: var(--bs-dark-blue-bg-color);
+    border: 1px solid var(--bs-dark-blue-bg-color);
+}
+
+.homePageLayout .homeHeroSection .heroContent .heroButtons .heroButton2 {
+    background-color: var(--bs-btn-bg-gradient-primary-color);
+    border: 1px solid var(--bs-btn-bg-gradient-primary-color);
+    padding: 18px 40px;
+}
+
+.btnIcon {
+    height: 22px;
+    width: 30px;
+}
+
+/* Floating image circle */
+.homePageLayout .homeHeroSection .circleBaseImage {
+    height: auto;
+    width: 250px;
+    top: 18% !important;
+    left: 2% !important;
+}
+
+/* Floating image semi-circle */
+.ovalBaseImage {
+    height: 250px;
+    width: 130px;
+    bottom: 10%;
+}
+
+
+
+/* Analytics Section Starts Here */
+
+.analyticsSection {
+    margin-top: 12%;
+    background-color: var(--bs-bg-body-color);
+    position: relative;
+
+}
+
+.analyticsContent .analyticsImageArea {
+    width: 60vw;
+    height: 40vh;
+}
+
+.analyticsSection .analyticsContent {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.analyticsSection .analyticsContent .analyticsContentHeading {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.analyticsSection .analyticsContent .analyticsContentDescription {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.analyticsSection .analyticsContent .analyticsContentButton {
+    color: var(--bs-text-primary-color);
+    font-size: 20px;
+    padding: 16px 70px;
+    background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradiant-secondary-color));
+    border: 1px solid var(--bs-btn-bg-gradient-primary-color);
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.analyticsSection .analyticsContent .analyticsContentButton:hover {
+    cursor: pointer;
+}
+
+
+/* Divider Rule */
+.dividerRule {
+    margin: 70px auto;
+    border: 2px solid var(--bs-text-primary-color);
+    height: 2px;
+    width: 80vw;
+}
+
+
+/* Gird Section */
+.gridSection {
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridSection .gridText .gridTextHeading {
+    font-size: 48px;
+    color: var(--bs-text-primary-color);
+    width: 85%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.gridSection .gridText .gridTextDescription {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bs-lightgray-text-color);
+    width: 80%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+ /* gridTextArea */
+
+.gridSection .gridCardArea{
+    margin-top: auto;
+}
+
+.gridSection .gridCardArea .gridCard{
+    background-color: var(--bs-dark-blue-bg-color) !important;
+    color: var(--bs-card-text-gray-color);
+    width: 264px;
+    height: 220px;
+}
+
+.gridSection .gridCardArea .gridCard .gridCardContent{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.gridSection .gridCardArea .gridCard .gridCardContent .gridCardImage{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.gridSection .gridCardArea .gridCard .gridCardContent .gridCardText{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+
+/* Info Section Starts here */
+
+.infoSection{
+    margin: 80px auto;
+}
+
+
+
+.infoSection .infoContentHeading{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--bs-text-primary-color);
+}
+
+.infoSection .infoContentDescription{
+    font-size: 24px;
+    font-weight: 400;
+    width: 85%;
+    color: var(--bs-gray-color);
+}
+
+
+/* Floating Info Section Iamages */
+
+.infoimageLeft{
+    height: auto;
+    padding: 0;
+    top: 320%;
+    left: 0;
+    width: 110px;
+}
+
+.infoimageRight{
+    height: auto;
+    padding: 0;
+    top: 355%;
+    right: 0;
+    width: 140px;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width:400px) {
+
+    /* HeroSection */
+
+    .homePageLayout .homeHeroSection {
+        height: 50vh;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 18px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 11px;
+        width: 70%;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtons {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        margin: 12px;
+        padding: 8px 35px;
+    }
+
+    .button {
+        padding: 8px 50px;
+        font-size: 12px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtons .heroButton2 {
+        padding: 8px 40px;
+    }
+
+
+    .ovalBaseImage {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    /* Analytics Section */
+
+    .analyticsSection .analyticsContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+
+    /* Divider Rule */
+    .dividerRule {
+        margin: 32px auto;
+    }
+
+
+    /* Grid Section */
+
+    /* gridText Area */
+
+    .gridSection .gridText .gridTextHeading {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* Grid Card Area */
+    .gridSection .gridCardArea{
+        margin: auto;
+    }
+    .gridSection .gridCardArea .gridCard{
+        width: auto;
+    }
+
+
+    /* info Section  */
+
+    .infoSection{
+        overflow: hidden;
+    }
+    .infoSection .infoContentHeading{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 14px;
+        width: 85vw;
+    }
+
+    .infoSection .barImage{
+       width: 80vw;
+    }
+
+    .infoimageLeft{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:401px) and (max-width:576px) {
+    .homePageLayout .homeHeroSection {
+        height: 55vh;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 22px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroButtons {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .ovalBaseImage {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* Analytics Section */
+
+    .analyticsSection .analyticsContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: auto;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+
+    /* Divider Ri=ule */
+    .dividerRule {
+        margin: 32px auto;
+    }
+
+    /* Grid Section */
+    .gridSection .gridText .gridTextHeading {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* Grid Card Area */
+    .gridSection .gridCardArea{
+        margin: auto;
+    }
+    .gridSection .gridCardArea .gridCard{
+        width: auto;
+    }
+
+
+    /* info Section  */
+    .infoSection{
+        overflow: hidden;
+    }
+    .infoSection .infoContentHeading{
+        font-size: 22px;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 16px;
+        width: 90vw;
+    }
+
+    .infoSection .barImage{
+       width: 80vw;
+    }    
+
+    .infoimageLeft{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: 40vh;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
+        font-size: 36px;
+    }
+
+    .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        height: auto;
+        width: 250px;
+        top: 14% !important;
+        left: 2% !important;
+    }
+
+    /* Floating image semi-circle */
+    .ovalBaseImage {
+        height: 250px;
+        width: 130px;
+        bottom: 8%;
+    }
+
+    /* Analytics Section */
+
+    .analyticsSection .analyticsContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 14px;
+        padding: 12px 35px;
+    }
+
+    /* Divider Rule */
+    .dividerRule {
+        margin: 36px auto;
+    }
+
+    /* Grid Section */
+
+    /* GridText Area */
+    .gridSection .gridText .gridTextHeading {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+    .gridSection .gridCardArea{
+        margin: auto;
+    }
+    .gridSection .gridCardArea .gridCard{
+        width: 300px;
+    }
+
+
+    /* info Section  */
+    .infoSection{
+        overflow: hidden;
+    }
+    .infoSection .infoContentHeading{
+        font-size: 22px;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 16px;
+        width: 90vw;
+    }
+
+    .infoSection .barImage{
+       width: 80vw;
+    }   
+
+    .infoimageLeft{
+        top: 240%;
+
+    }
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    /* Homepage Section */
+    .homePageLayout .homeHeroSection {
+        height: 45vh;
+    }
+
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 9% !important;
+    }
+
+    /* Floating image semi-circle */
+    .ovalBaseImage {
+        bottom: 42%;
+    }
+
+
+    /* Analytics Section */
+
+    .analyticsContent .analyticsImageArea {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analyticsSection .analyticsContent {
+        align-items: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+
+    .dividerRule {
+        margin: 36px auto;
+    }
+
+    /* Grid Section */
+
+    /* Grid Text Arean */
+    .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    /* Grid Card Area */
+    .gridSection .gridCardArea{
+        margin: auto;
+    }
+    .gridSection .gridCardArea .gridCard{
+        width: auto;
+    }
+
+    /* Info Section */
+     .infoSection{
+        overflow: hidden;
+    }
+    .infoSection .infoContentHeading{
+        font-size: 40px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 18px;
+        width: 80vw;
+        text-align: left;
+    }
+
+    .infoSection .barImage{
+       width: 80vw;
+    }   
+
+    .infoimageLeft{
+        top: 240%;
+
+    }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: 45vh;
+    }
+
+    /* Bottom Image */
+    .ovalBaseImage {
+        bottom: 20 !important;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 120px !important;
+    }
+
+    /* Analytics Section */
+
+
+    .analyticsSection {
+        margin-top: 24%;
+    }
+
+    .analyticsContent .analyticsImageArea {
+        width: 50vw;
+    }
+
+    .analyticsSection .analyticsContent {
+        gap: 14px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 34px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 14px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+
+    /* Geid Section */
+
+    /* GridText Area */
+    .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+    }
+
+         /* Info Section */
+    .infoSection .infoContentHeading{
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .infoSection .barImage{
+       width: 40vw;
+    }   
+
+    .infoimageLeft{
+        top: 240%;
+
+    }
+
+    .infoimageLeft{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1280px) {
+
+
+    /* Analytics Section */
+
+    .analyticsSection .analyticsContent {
+        gap: 24px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 40px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 16px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+    /* Grid Section */
+
+    /* Grid TextArea */
+    .gridSection .gridText .gridTextHeading {
+        width: 100%;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 16px;
+    }
+
+
+    
+
+     /* Info Section */
+    .infoSection .infoContentHeading{
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .infoSection .barImage{
+       width: 40vw;
+    }   
+
+    .infoimageLeft{
+        top: 240%;
+
+    }
+
+    .infoimageLeft{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1024px) and (min-height:1366px){
+    /* Hero Section */
+    .homePageLayout .homeHeroSection {
+        height: auto;
+    }
+
+    /* Bottom Image */
+    .ovalBaseImage {
+        bottom: 58% !important;
+    }
+
+    /* Floating image circle */
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        top: 120px !important;
+    }
+
+    /* Analytics Section */
+
+
+    .analyticsSection {
+        margin-top: 24%;
+    }
+
+    .analyticsContent .analyticsImageArea {
+        width: 50vw;
+    }
+
+    .analyticsSection .analyticsContent {
+        gap: 14px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentHeading {
+        font-size: 34px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentDescription {
+        font-size: 14px;
+    }
+
+    .analyticsSection .analyticsContent .analyticsContentButton {
+        padding: 8px 35px;
+    }
+
+
+    /* Grid Section */
+
+    /* GridText Area */
+    .gridSection .gridText .gridTextHeading {
+        font-size: 28px;
+    }
+
+    .gridSection .gridText .gridTextDescription {
+        font-size: 14px;
+    }
+
+
+
+     /* Info Section */
+    .infoSection .infoContentHeading{
+        font-size: 34px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .infoSection .infoContentDescription{
+        font-size: 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .infoSection .barImage{
+       width: 40vw;
+    }   
+
+    .infoimageLeft{
+        top: 240%;
+
+    }
+
+    .infoimageLeft{
+        display: none;
+    }
+
+} 

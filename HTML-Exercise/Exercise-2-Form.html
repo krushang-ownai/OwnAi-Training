@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2 HTML FORM</title>
+    <link rel="stylesheet" href="Exercise-2-Form.css">
+</head>
+
+<body>
+    <Form>
+        <div class="userRegistration">
+            <legend class="formLegend"> Registration Form</legend>
+
+            <!-- Input fieald to get UserName -->
+            <div class="formUserName">
+                <span>
+                    <label for="firstName">FirstName:</label>
+                    <input class="inputField" type="text" pattern="[A-Za-z]+" id="firstName" name="firstName" placeholder="Enter your Name (Text-Only)" required>
+                </span>
+                <span>
+                    <label for="lastName">LastName:</label>
+                    <input class="inputField" type="text" pattern="[A-Za-z]+" id="lastName" name="lastName" placeholder="Enter your Surname (Text-Only)" required>
+                </span>
+            </div>
+
+            <!-- User Gender Input Field -->
+            <div class="formRadioButtton">
+                <label for="selectGender">SelectGender:</label>
+                <input type="radio" id="male" name="selectGender" for="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="selectGender" for="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="selectGender" for="other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Birth Date Input Field -->
+            <div class="formDOB">
+                <label for="birthDate">BirthDate:</label>
+                <input type="date" name="birthDate" id="birthDate" min="1900-01-01"  required>
+            </div>
+
+            <!-- Contact Info input Field -->
+            <div class="formContactInfo">
+                <span>
+                    <label for="emailID">Email:</label>
+                    <input class="inputField" type="email" id="emailID" name="emailID" placeholder="add@example.com" required>
+                </span>
+                <span>
+                    <label for="phoneNmber">Phone:</label>
+                    <input class="inputField" type="tel" pattern="[0-9]+" id="phoneNmber" name="phoneNmber" placeholder="9876543210" minlength="10" maxlength="14" required>
+                </span>
+            </div>
+
+            <!-- Password Inputs  -->
+            <div class="formPassword">
+                <span>
+                    <label for="userPassword">Password:</label>
+                    <input class="inputField" type="password" pattern=".{8,}" name="userPassword" id="userPassword" placeholder="create strong password" required>
+                </span>
+                <span>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input class="inputField" type="password" pattern=".{8,}"  name="confirmPassword" id="confirmPassword" placeholder="confirm your password" required>
+                </span>
+            </div>
+
+            <!-- Notification Checkbox -->
+            <dic class="formCheckbox">
+                <input type="checkbox" id="allow" name="allowNotificaton" for="allow" >
+                <label for="allow">Allow Notifications</label>
+            </dic>
+
+            <div class="formSubmit">
+                <input class="registrationSubmit" type="submit">
+            </div>
+
+        </div>
+    </Form>
+</body>
+
+</html>

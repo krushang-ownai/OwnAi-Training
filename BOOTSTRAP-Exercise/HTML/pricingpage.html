@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing-Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/pricing.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="headerSection">
+        <nav class="navbar navbar-expand-lg navbarMenu p-lg-4 p-3">
+            <div class="container-fluid">
+                <div class="navbar-brand ms-5">
+                    <img class="brandImage" src="../ASSETS/ownai.png" alt="ownailogo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbarToggleIcon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto navbarNavigation">
+                        <li class="nav-item"><a class="navbarLinks" href="#">Dashboard</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">NFT</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Token</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">RoadMap</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="#">Docs</a></li>
+                    </ul>
+                    <div class="d-flex ms-auto me-lg-4 gap-3 navbarButtons">
+                        <button class="signinButton text-capitalize" type="submit">Sign in</button>
+                        <button class="signupButton text-capitalize" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Pricing Page -->
+    <section class="ownAiPricingPage">
+        <div class="container-fluid ownAiPricingPageSection">
+            <div class="row justify-content-center align-items-center ownAipricingPageSection ms-lg-3">
+                <!-- Card -->
+                <div class="col col-lg-6">
+
+                    <div class="card text-center pricingPageCard">
+                        <div class="card-body">  
+                                <!-- Card top area -->
+                                <div class="text-center text-capitalize cardTop">
+                                    <h4 class="cardHeading mb-4">Explore</h4>
+                                    <img class="mb-4 cardImage" src="../ASSETS/cardEthereumPricingPageImg.png" alt="ethereumimg">
+                                    <p class="card-text cardDescriptionTitle mb-2">get a taste of on-chain data</p>
+                                    <p class="card-text cardDescription">Idea for a fisrt dive up to daily resolution macro
+                                        charts in demo mode</p>
+                                </div>
+                                    
+                                 <!-- Card bottom area -->
+                                <div class="cardBottom text-capitalize gap-2">
+                                        <h5 class="cardPricingHeading">$ 10</h5>
+                                        <h6 class="cardPricingDescription">per month</h6>
+                                    </div>
+                                <button class="cardPricingButton">buy standard</button>
+                        </div>
+
+                        <!-- Arrow Button -->
+                        <div class="cardArrowButton">
+                            <a type="button">
+                                <i class="fa-solid fa-circle-arrow-right textPrimary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image of Pricing Section -->
+                <div class="col col-lg-6">
+                    <div class="imgLayout">
+                        <img class="pricingImage img-fluid" src="../ASSETS/pricingPageImg.png" height="637px" width="556px" alt="pricingLayoutImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footerSection">
+        <nav class="navbar navbar-expand-lg p-3 p-lg-4">
+            <div class="container-fluid">
+                <div class="ms-auto me-auto d-flex justify-content-center align-items-center ms-lg-5">
+                    <img class="brandImage" src="../ASSETS/ownai.png" alt="">
+                </div>
+
+                <div class="navbar-collapse" id="navbarFooter">
+                    <ul class="navbar-nav footerNav ms-auto text-center">
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Companey</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Terms & Conditions</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Privacy Policy</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Cookie Policy</a></li>
+                        <li class="nav-item"><a class="footerNavigationLinks" href="#">Contact Us</a></li>
+                    </ul>
+
+                    <div class="footerIconSection d-flex ms-auto gap-2 me-lg-5">
+                        <a class="footerIcon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footerIcon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
