@@ -32,13 +32,14 @@ body {
 }
 
 .homePageLayout .homeHeroSection .heroContent {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroText {
-    margin-top: 14%;
+    margin-top: 115px;
     width: 70%;
     align-items: center;
 }
@@ -63,15 +64,15 @@ body {
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea {
     width: 70%;
-    gap: 30px;
+    gap: 40px;
     margin-top: 16px;
     display: flex;
     justify-content: start;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton {
-    padding: 18px 60px;
-    font-size: 18px;
+    padding: 20px 50px;
+    font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 8px;
@@ -91,7 +92,7 @@ body {
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 {
     background-color: var(--bs-btn-bg-gradient-primary-color);
     border: 1px solid var(--bs-btn-bg-gradient-primary-color);
-    padding: 18px 40px;
+    padding: 20px 30px;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroButtonsArea .heroButton2 .btnIcon {
@@ -108,24 +109,27 @@ body {
 }
 
 /* Floating image semi-circle */
-  .ovalBaseImage {
+.ovalBaseImage {
     height: 250px;
     width: 130px;
     bottom: 10%;
 }
-
 
 /* Analytics Section Starts Here */
 .homePageLayout .analyticsSection {
     margin-top: 14%;
     background-color: var(--bs-bg-body-color);
     position: relative;
-
 }
 
 .homePageLayout .analyticsContent .analyticsImageArea {
     width: 60vw;
     height: 40vh;
+}
+
+.homePageLayout .analyticsContent .analyticsImageArea .analyticsImage{
+    width: 100%;
+    height: 100%;
 }
 
 .homePageLayout .analyticsSection .analyticsContent {
@@ -279,7 +283,7 @@ body {
     color: var(--bs-text-primary-color);
 }
 
-.homePageLayout .liveProductSection .liveHeading .liveHeadingDot{
+.homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
     position: absolute;
 }
 
@@ -297,6 +301,7 @@ body {
 .homePageLayout .liveProductSection .chartsButton .chartsButtonImg {
     margin-left: 8px;
 }
+
 .homePageLayout .productLineImg {
     position: absolute;
     left: 0;
@@ -478,7 +483,6 @@ body {
         margin: 25px auto;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
     }
 
     .homePageLayout .infoSection .infoContentHeading {
@@ -515,7 +519,7 @@ body {
         margin: 14px auto;
     }
 
-    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot{
+    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
         width: 10px;
         height: 10px;
     }
@@ -676,7 +680,7 @@ body {
     }
 
     .homePageLayout .infoSection .barImage {
-        width: 75vw;
+        width: 70vw;
     }
 
     .homePageLayout .infoSection .floatimageLeft {
@@ -687,18 +691,20 @@ body {
     .homePageLayout .infoSection .floatimageRight {
         margin-top: 135px;
         width: 70px;
+        z-index: 9999;
     }
 
     /* Live Product Section */
-    .homePageLayout .liveProductSection{
+    .homePageLayout .liveProductSection {
         margin: 70px auto;
     }
+
     .homePageLayout .liveProductSection .liveHeading {
         font-size: 24px;
         margin: 14px auto;
     }
 
-    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot{
+    .homePageLayout .liveProductSection .liveHeading .liveHeadingDot {
         width: 10px;
         height: 10px;
     }
@@ -728,14 +734,14 @@ body {
         height: 305px;
     }
 
-    .homePageLayout .carouselSection  .carouselControlIconPrevious {
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
         border-radius: 45px;
         height: 45px;
         width: 45px;
         left: 2%;
     }
 
-    .homePageLayout .carouselSection  .carouselControlIconNext {
+    .homePageLayout .carouselSection .carouselControlIconNext {
         border-radius: 45px;
         height: 45px;
         width: 45px;
@@ -829,6 +835,7 @@ body {
         font-size: 14px;
         width: 100%;
     }
+
     .homePageLayout .gridSection .gridCardArea {
         margin: auto;
     }
@@ -858,12 +865,12 @@ body {
         align-items: center;
     }
 
-    .homePageLayout .infoSection .floatimageLeft{
+    .homePageLayout .infoSection .floatimageLeft {
         margin-top: 40px;
         width: 65px;
     }
 
-    .homePageLayout .infoSection .floatimageRight{
+    .homePageLayout .infoSection .floatimageRight {
         margin-top: 50px;
         width: 75px;
     }
@@ -1031,7 +1038,7 @@ body {
     }
 
     .homePageLayout .infoSection .floatimageLeft {
-       margin-top: 75px;
+        margin-top: 75px;
         width: 80px;
     }
 
@@ -1091,16 +1098,17 @@ body {
         height: 50vh;
         margin-top: auto;
     }
-    
+
     /* Floating image circle */
     .homePageLayout .homeHeroSection .circleBaseImage {
         top: 120px !important;
     }
-    
+
     /* Bottom Image */
     .ovalBaseImage {
         bottom: 16% !important;
     }
+
     /* Analytics Section */
 
     .homePageLayout .analyticsSection {
@@ -1219,37 +1227,41 @@ body {
         font-size: 16px;
     }
 
-
-
-
     /* Info Section */
     .homePageLayout .infoSection .infoContentHeading {
         font-size: 34px;
         width: 100%;
         text-align: left;
     }
+
     .homePageLayout .infoSection .infoContentDescription {
         font-size: 20px;
         width: 90%;
         text-align: left;
     }
-    .homePageLayout .infoSection .floatimageLeft{
+
+    .homePageLayout .infoSection .floatimageLeft {
         margin-top: 100px;
         width: 100px;
     }
-    .homePageLayout .infoSection .floatimageRight{
+
+    .homePageLayout .infoSection .floatimageRight {
         margin-top: 60px;
         width: 120px;
     }
+
     .homePageLayout .infoSection .barImage {
         width: 40vw;
     }
-    .homePageLayout .carouselControlIconPrevious {
+
+    .homePageLayout .carouselSection .carouselControlIconPrevious {
         left: 17%;
     }
-    .homePageLayout .carouselControlIconNext {
+
+    .homePageLayout .carouselSection .carouselControlIconNext {
         left: 30%;
     }
+
     .homePageLayout .carouselSection .carouselSectionImg {
         width: 52vw;
     }
