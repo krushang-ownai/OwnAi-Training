@@ -467,7 +467,7 @@ body {
     }
 }
 
-@media screen and (min-width:912px) and (max-width:1023px) and (min-height: 1366px) {
+@media screen and (min-width:912px) and (max-width:1023px) {
 
     .ownAiPricingPage .ownAiPricingPageSection {
         margin-top: 60px !important;
@@ -489,7 +489,7 @@ body {
         left: 95%;
     }
     .ownAiPricingPage .ownAiPricingPageSection .imgLayout {
-        height: 50vh;
+        height: auto;
     }
 }
 
