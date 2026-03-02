@@ -22,9 +22,7 @@ body {
     position: relative;
 }
 
-
 /* Hero Section Layout */
-
 .homePageLayout {
     background-color: var(--bs-bg-body-color);
 }
@@ -33,7 +31,6 @@ body {
     height: 60vh;
     background-image: linear-gradient(var(--bs-home-hero-bg-secondary), var(--bs-home-hero-bg-primary));
 }
-
 
 .homePageLayout .homeHeroSection .heroContent {
     display: flex;
@@ -49,30 +46,29 @@ body {
 
 .homePageLayout .homeHeroSection .heroContent .heroText .heroTextHeading {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     text-transform: capitalize;
 }
 
 .homePageLayout .homeHeroSection .heroContent .heroText .heroTextDescription {
-    color: var(--bs-gray-text-colo);
+    color: var(--bs-gray-text-color);
     font-size: 16px;
-    font-weight: 300;
-    max-width: 60%;
+    font-weight: 400;
+    max-width: 55%;
     margin: 20px auto;
     justify-content: center;
     align-items: center;
-    text-transform: capitalize;
     text-align: center;
 }
 
-
 .homePageLayout .homeHeroSection .heroContent .heroButtons {
     width: 70%;
+    gap: 30px;
+    margin-top: 16px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
 }
-
 
 .button {
     padding: 18px 60px;
@@ -87,7 +83,6 @@ button:hover {
     transform: scale(.9);
     transition-duration: .7s;
 }
-
 
 .homePageLayout .homeHeroSection .heroContent .heroButtons .heroButton1 {
     background-color: var(--bs-dark-blue-bg-color);
@@ -121,11 +116,9 @@ button:hover {
 }
 
 
-
 /* Analytics Section Starts Here */
-
 .analyticsSection {
-    margin-top: 12%;
+    margin-top: 14%;
     background-color: var(--bs-bg-body-color);
     position: relative;
 
@@ -137,7 +130,7 @@ button:hover {
 }
 
 .analyticsSection .analyticsContent {
-    margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -148,12 +141,12 @@ button:hover {
 .analyticsSection .analyticsContent .analyticsContentHeading {
     font-size: 48px;
     font-weight: 500;
-    width: 80%;
+    width: 90%;
 }
 
 .analyticsSection .analyticsContent .analyticsContentDescription {
-    width: 60%;
-    font-size: 16px;
+    width: 76%;
+    font-size: 18px;
     font-weight: 300;
     text-align: left;
 }
@@ -172,15 +165,12 @@ button:hover {
     cursor: pointer;
 }
 
-
 /* Divider Rule */
 .dividerRule {
-    margin: 70px auto;
-    border: .8px solid var(--bs-text-primary-color);
-    height: 2px;
+    margin: 90px auto;
+    height: 1px;
     width: 90vw;
 }
-
 
 /* Gird Section */
 .gridSection {
@@ -206,23 +196,21 @@ button:hover {
     text-transform: capitalize;
 }
 
-
 /* gridTextArea */
-
 .gridSection .gridCardArea {
     margin-top: auto;
 }
 
 .gridSection .gridCardArea .gridCard {
-    background-color: var(--bs-dark-blue-bg-color) !important;
+    background-color: var(--bs-card-bg-blue-color) !important;
     color: var(--bs-card-text-gray-color);
-    width: 264px;
-    height: 220px;
+    border-radius: 12px;
+    width: 284px;
+    height: 260px;
 }
 
 .gridSection .gridCardArea .gridCard .gridCardContent {
     display: flex;
-    flex-direction: column;
     flex-direction: column;
     justify-content: center;
     margin: auto;
@@ -243,9 +231,7 @@ button:hover {
     margin: 0 auto;
 }
 
-
 /* Info Section Starts here */
-
 .infoSection {
     margin: 100px auto;
 }
@@ -263,36 +249,40 @@ button:hover {
     color: var(--bs-gray-color);
 }
 
-/* Floating Info Section Iamages */
+.infoSection .barImage {
+    right: 10%;
+}
 
+/* Floating Info Section Iamages */
 .infoSection .floatimageLeft {
     height: auto;
     padding: 0;
-    top: 265%;
+    top: 280%;
     left: 0;
-    width: 140px;
+    width: 130px;
 }
 
 .infoSection .floatimageRight {
     height: auto;
     padding: 0;
-    top: 290%;
+    top: 315%;
     right: 0;
-    width: 180px;
+    width: 150px;
 }
 
 .liveProductSection {
-    margin: 130px auto;
+    margin: 150px auto;
 }
 
-.liveProductSection .liveHeading{
+.liveProductSection .liveHeading {
     font-size: 48px;
     font-weight: 700;
     color: var(--bs-text-primary-color);
 }
 
-.liveProductSection .chartsButton{
-    padding: 24px 50px;
+.liveProductSection .chartsButton {
+    margin-right: 12px;
+    padding: 30px 50px;
     background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradient-tertery-color));
     color: var(--bs-text-primary-color);
     border: 1px solid var(--bs-btn-bg-gradient-primary-color);
@@ -301,22 +291,21 @@ button:hover {
     font-weight: 600;
 }
 
-.liveProductSection .chartsButton .chartsButtonImg{
+.liveProductSection .chartsButton .chartsButtonImg {
     margin-left: 8px;
 }
 
-.productLineImg{
+.productLineImg {
     position: absolute;
     left: 0;
 }
 
 /* Carousel Section */
-
-.carouselSection{
+.carouselSection {
     margin: 120px auto;
 }
 
-.carousel-inner{
+.carousel-inner {
     display: flex;
     align-items: center;
     margin: auto;
@@ -324,54 +313,59 @@ button:hover {
     height: 380px;
 }
 
-.carouselSection .carouselHeading{
+.carouselSection .carouselHeading {
     color: var(--bs-text-primary-color);
     font-size: 28px;
     font-weight: 500;
 }
 
-
-.carouselSection  .carouselDescription{
+.carouselSection .carouselDescription {
     color: var(--bs-text-primary-color);
     font-size: 18px;
     font-weight: 400;
     margin-top: 14px;
 }
 
-.carouselControlIconPrevious{
+.carouselControlIconPrevious {
     border: 1px solid wheat;
-    border-radius: 50px;
-    height: 56px;
-    width: 56px;
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
     background-color: var(--bs-bg-body-color);
     position: absolute;
     left: 25%;
     bottom: 10%;
 }
 
-.carouselControlIconNext{
+.carouselControlIconNext {
     border: 1px solid wheat;
-    border-radius: 56px;
-    height: 56px;
-    width: 56px;
-    background-color: var(--bs-bg-body-color);
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--bs-btn-bg-gradient-primary-color);
     position: absolute;
     left: 35%;
     bottom: 10%;
 }
 
-
-
+.carouselCounter {
+    position: absolute;
+    left: 65%;
+    bottom: 10%;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
 
 /* Media Queries */
-
 
 @media screen and (max-width:400px) {
 
     /* HeroSection */
-    .homePageLayout{
+    .homePageLayout {
         overflow: hidden;
     }
+
     .homePageLayout .homeHeroSection {
         height: 50vh;
         margin-top: 60px;
@@ -404,10 +398,15 @@ button:hover {
         padding: 8px 40px;
     }
 
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        width: 120px;
+        top: 15%;
+    }
 
     .ovalBaseImage {
-        display: none;
-        visibility: hidden;
+        width: 70px;
+        height: 120px;
+        bottom: 34%;
     }
 
 
@@ -475,7 +474,7 @@ button:hover {
     /* info Section  */
 
     .infoSection {
-        margin:25px auto;
+        margin: 25px auto;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -495,54 +494,71 @@ button:hover {
         width: 80vw;
     }
 
-    .infoimageLeft {
+    .infoSection .floatimageLeft {
+        display: none;
+    }
+
+    .infoSection .floatimageRight {
         display: none;
     }
 
     /* Live Product Section */
-    .liveProductSection{
+    .liveProductSection {
         margin-top: 20px;
     }
 
-    .liveProductSection .liveHeading{
+    .liveProductSection .liveHeading {
         font-size: 24px;
         margin: 14px auto;
     }
-    .liveProductSection .chartsButton{
+
+    .liveProductSection .chartsButton {
         padding: 12px 40px;
         font-size: 14px;
     }
-    .liveProductSection .chartsButton .chartsButtonImg{
+
+    .liveProductSection .chartsButton .chartsButtonImg {
         height: 14px;
         width: 12px;
     }
-    .productLineImg{
-        display: none;  
+
+    .productLineImg {
+        display: none;
     }
 
-    .livedot{
+    .livedot {
         display: none;
     }
 
 
     /* Carousel Section */
-    .carouselSection{
+    .carouselSection {
         margin-top: 15px;
     }
 
+    .carousel-inner {
+        display: block;
+        height: 305px;
+    }
 
-    .carouselControlIconPrevious{
+    .carouselControlIconPrevious {
         border-radius: 50px;
         height: 50px;
         width: 50px;
         left: 2%;
     }
 
-    .carouselControlIconNext{
+    .carouselControlIconNext {
         border-radius: 50px;
         height: 50px;
         width: 50px;
         left: 20%;
+    }
+
+    .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 20px auto;
     }
 
 }
@@ -574,9 +590,15 @@ button:hover {
         font-size: 14px;
     }
 
+    .homePageLayout .homeHeroSection .circleBaseImage {
+        width: 160px;
+        top: 14% !important;
+    }
+
     .ovalBaseImage {
-        display: none;
-        visibility: hidden;
+        width: 70px;
+        height: 140px;
+        bottom: 38%;
     }
 
     /* Analytics Section */
@@ -655,50 +677,67 @@ button:hover {
         width: 80vw;
     }
 
-    .infoimageLeft {
+    .infoSection .floatimageLeft {
+        display: none;
+    }
+
+    .infoSection .floatimageRight {
         display: none;
     }
 
 
-    .liveProductSection .liveHeading{
+    .liveProductSection .liveHeading {
         font-size: 24px;
         margin: 14px auto;
     }
-    .liveProductSection .chartsButton{
+
+    .liveProductSection .chartsButton {
         padding: 12px 40px;
         font-size: 14px;
     }
-    .liveProductSection .chartsButton .chartsButtonImg{
+
+    .liveProductSection .chartsButton .chartsButtonImg {
         height: 14px;
         width: 12px;
     }
-    .productLineImg{
-        display: none;  
+
+    .productLineImg {
+        display: none;
     }
 
-    .livedot{
+    .livedot {
         display: none;
     }
 
     /* Carousel Section */
-    .carouselSection{
+    .carouselSection {
         margin-top: 15px;
     }
 
+    .carousel-inner {
+        display: block;
+        height: 305px;
+    }
 
-    .carouselControlIconPrevious{
+    .carouselControlIconPrevious {
         border-radius: 50px;
         height: 50px;
         width: 50px;
         left: 2%;
     }
 
-    .carouselControlIconNext{
+    .carouselControlIconNext {
         border-radius: 50px;
         height: 50px;
         width: 50px;
         left: 20%;
-    }    
+    }
+
+    .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 20px auto;
+    }
 
 }
 
@@ -820,43 +859,64 @@ button:hover {
 
     /* Live Product Section */
 
-    .liveProductSection{
+    .liveProductSection {
         margin: 60px auto;
     }
 
-    .liveProductSection .liveHeading{
+    .liveProductSection .liveHeading {
         font-size: 36px;
-        
+
     }
-    .liveProductSection .chartsButton{
+
+    .liveProductSection .chartsButton {
         padding: 18px 40px;
         font-size: 14px;
     }
-    .liveProductSection .chartsButton .chartsButtonImg{
+
+    .liveProductSection .chartsButton .chartsButtonImg {
         height: 18px;
         width: 12px;
     }
-    .productLineImg{
-        width: 36vw; 
+
+    .productLineImg {
+        width: 36vw;
     }
 
     /* Carousel Section */
 
-    .carouselSection{
+    .carouselSection {
         margin-top: 30px;
     }
 
-    .carousel-inner{
-        height: 40vh;
+    .carousel-inner {
+        display: block;
+        height: 30vh;
         width: 80vw;
     }
 
-    .carouselControlIconPrevious{
+    .carouselSection .carouselHeading {
+        font-size: 40px;
+    }
+
+    .carouselSection .carouselDescription {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .carouselControlIconPrevious {
         left: 8%;
     }
-    .carouselControlIconNext{
+
+    .carouselControlIconNext {
         left: 20%;
     }
+
+    .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 35px auto;
+    }
+
 
 }
 
@@ -868,7 +928,6 @@ button:hover {
         height: 40vh;
     }
 
-
     /* Floating image circle */
     .homePageLayout .homeHeroSection .circleBaseImage {
         top: 9% !important;
@@ -879,14 +938,9 @@ button:hover {
         bottom: 52%;
     }
 
-
     /* Analytics Section */
-
     .analyticsContent .analyticsImageArea {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 80vw !important;
     }
 
     .analyticsSection .analyticsContent {
@@ -942,7 +996,7 @@ button:hover {
         overflow: hidden;
     }
 
-    .infoSection .infoContent{
+    .infoSection .infoContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -964,28 +1018,60 @@ button:hover {
     }
 
     .infoSection .barImage {
-        width: 65vw;
-        margin-left: 0;
-    }
-
-    .infoimageLeft {
-        top: 240%;
+        width: 50vw;
 
     }
 
+    .infoSection .floatimageLeft {
+        display: none;
+    }
 
-
+    .infoSection .floatimageRight {
+        display: none;
+    }
 
     /* Live Product Section */
 
-    .liveProductSection .liveHeading{
+    .liveProductSection .liveHeading {
         font-size: 40px;
     }
 
-    .productLineImg{
-        width: 40vw; 
+    .productLineImg {
+        width: 40vw;
     }
 
+    /* Carousel Section */
+    .carouselSection {
+        margin-top: 30px;
+    }
+
+    .carousel-inner {
+        display: block;
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .carouselSection .carouselHeading {
+        font-size: 34px;
+    }
+
+    .carouselSection .carouselDescription {
+        font-size: 26px;
+    }
+
+    .carouselControlIconPrevious {
+        left: 8%;
+    }
+
+    .carouselControlIconNext {
+        left: 20%;
+    }
+
+    .carouselSectionImg {
+        width: 90vw;
+        display: flex;
+        margin: 35px auto;
+    }
 }
 
 @media screen and (min-width:993px) and (max-width:1200px) {
@@ -993,12 +1079,12 @@ button:hover {
     /* Hero Section */
     .homePageLayout .homeHeroSection {
         height: 50vh;
-        margin-top: 20px;
+        margin-top: auto;
     }
 
     /* Bottom Image */
     .ovalBaseImage {
-        bottom: 20 !important;
+        bottom: 16% !important;
     }
 
     /* Floating image circle */
@@ -1008,6 +1094,9 @@ button:hover {
 
     /* Analytics Section */
 
+    .analyticsSection {
+        margin-top: 24%;
+    }
 
     .analyticsSection .analyticsContent {
         gap: 25px;
@@ -1047,6 +1136,11 @@ button:hover {
         font-size: 14px;
     }
 
+    .gridSection .gridCardArea .gridCard {
+        width: 254px;
+        height: 234px;
+    }
+
     /* Info Section */
     .infoSection .infoContentHeading {
         font-size: 34px;
@@ -1064,13 +1158,22 @@ button:hover {
         width: 40vw;
     }
 
-    .infoimageLeft {
-        top: 240%;
-
+    .infoSection .floatimageLeft {
+        top: 350%;
+        width: 80px;
     }
 
-    .infoimageLeft {
-        display: none;
+    .infoSection .floatimageRight {
+        top: 420%;
+        width: 90px;
+    }
+
+    .carouselControlIconPrevious {
+        left: 8%;
+    }
+
+    .carouselControlIconNext {
+        left: 22%;
     }
 
 }
@@ -1128,17 +1231,29 @@ button:hover {
         width: 40vw;
     }
 
-    .infoimageLeft {
-        top: 240%;
-
+    .infoSection .floatimageLeft {
+        top: 293%;
+        width: 100px;
     }
 
-    .infoimageLeft {
-        display: none;
+    .infoSection .floatimageRight {
+        top: 330%;
+        width: 110px;
+    }
+
+    .carouselSection .carouselSectionImg {
+        width: 52vw;
+    }
+
+    .carouselControlIconPrevious {
+        left: 17%;
+    }
+
+    .carouselControlIconNext {
+        left: 30%;
     }
 
 }
-
 
 @media screen and (min-width:1024px) and (max-width:1024px) and (min-height:1366px) {
 
@@ -1213,17 +1328,24 @@ button:hover {
         text-align: left;
     }
 
-    .infoSection .barImage {
-        width: 40vw;
+    .infoSection .floatimageLeft {
+        top: 160%;
+        width: 80px;
     }
 
-    .infoimageLeft {
-        top: 240%;
-
+    .infoSection .floatimageRight {
+        top: 185%;
+        width: 90px;
     }
 
-    .infoimageLeft {
-        display: none;
+    /* Carousel Section */
+    .carouselSection {
+        margin-top: 30px;
+    }
+
+    .carouselSection .carouselSectionImg {
+        width: 53vw;
+        height: 27vh;
     }
 
 }

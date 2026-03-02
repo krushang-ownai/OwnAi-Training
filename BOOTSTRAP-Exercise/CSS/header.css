@@ -5,36 +5,28 @@
 .headerSection {
     background-color: var(--bs-bg-primary-color);
 }
-
 .headerSection .brandImage {
     width: 60px;
     height: 25px;
 }
-
 .headerSection .navbarMenu .navbar-toggler{
   background-color: transparent;
   border: 2px solid var(--bs-text-active-color);
 }
-
 .headerSection .navbarMenu .navbarToggleIcon {
     color: var(--bs-text-active-color) !important;
 }
-
 .headerSection .navbarMenu .navbarNavigation .navbarLinks {
     text-decoration: none;
     color: var(--bs-text-primary-color);
     padding: 8px 15px;
 }
-
 .headerSection .navbarMenu .navbarNavigation .navbarLinks:hover {
     color: var(--bs-text-active-color);
 }
-
 .headerSection .navbarMenu .navbarNavigation .navbarLinks:active {
     color: var(--bs-text-active-color) !important;
 }
-
-
 .headerSection .navbarMenu .navbarButtons .signinButton {
     padding: 5px 28px;
     border: 2px solid var(--bs-btn-primary-border-color);
@@ -45,13 +37,10 @@
     font-weight: 300;
     text-transform: capitalize;
 }
-
 .headerSection .navbarMenu .navbarButtons .signinButton:hover {
     background-image: linear-gradient(var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradiant-secondary-color));
     color: var(--bs-text-secondary-color);
 }
-
-
 .headerSection .navbarMenu .navbarButtons .signupButton {
     padding: 5px 28px;
     color: var(--bs-text-primary-color);
@@ -62,13 +51,11 @@
     font-weight: 300;
     text-transform: capitalize;
 }
- 
 .headerSection .navbarMenu .navbarButtons .signupButton:hover {
     border: 2px solid var(--bs-btn-primary-border-color);
     background-image: linear-gradient(var(--bs-bg-primary-color));
     color: var(--bs-text-primary-color);
 }
-
 
 
 @media screen and (max-width:768px) {
@@ -83,7 +70,6 @@
             left: 0;
             z-index: 1000;
     }
-
     .headerSection .navbarMenu  .navbarNavigation{
             display: flex;
             flex-direction: column;
@@ -91,7 +77,6 @@
             align-items: center;
             gap: 14px;
     }   
-
     .headerSection .navbarMenu .navbarButtons {
         display: flex;
         justify-content: space-around;
@@ -101,12 +86,9 @@
 
 }
 
+@media screen and (min-width:769px) and (max-width:992px) {
 
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-
-      /* Header Section */
-    
+    /* Header Section */
     .headerSection .navbarMenu {
         background-color: var(--bs-bg-primary-color);
         padding: auto;
@@ -115,41 +97,20 @@
         right: 0;
         left: 0;
         z-index: 1000;
-        }
-
+    }
+    .headerSection .navbarMenu  .navbarNavigation{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+    }       
     .headerSection .navbarMenu  .navbarButtons {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-top: 5px;
     }
-
-
 }
 
-@media screen and (width:768px) and (height:1024px){
-
-         .headerSection .navbarNavigation{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 14px;
-            }
-        
-         .headerSection .navbarMenu {
-                background-color: var(--bs-bg-primary-color);
-                padding: auto;
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 1000;
-            }   
-        .headerSection .navbarMenu .navbarButtons {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 5px;
-            }
-}    
+ 

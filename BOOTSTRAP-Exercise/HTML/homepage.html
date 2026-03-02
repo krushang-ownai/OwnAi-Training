@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg navbarMenu p-lg-4 p-3">
             <div class="container-fluid">
                 <div class="navbar-brand ms-5">
-                    <img class="brandImage" src="../ASSETS/ownai.png" alt="ownailogo">
+                     <img class="brandImage" src="../ASSETS/ownai.png" alt="ownailogo">
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto navbarNavigation">
-                        <li class="nav-item"><a class="navbarLinks" href="#">Dashboard</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="../HTML/homePage.html">Dashboard</a></li>
                         <li class="nav-item"><a class="navbarLinks" href="#">NFT</a></li>
                         <li class="nav-item"><a class="navbarLinks" href="#">Token</a></li>
                         <li class="nav-item"><a class="navbarLinks" href="#">RoadMap</a></li>
-                        <li class="nav-item"><a class="navbarLinks" href="../HTML/pricingpage.html">Pricing</a></li>
+                        <li class="nav-item"><a class="navbarLinks" href="../HTML/pricingPage.html">Pricing</a></li>
                         <li class="nav-item"><a class="navbarLinks" href="#">Docs</a></li>
                     </ul>
                     <div class="d-flex ms-auto me-lg-4 gap-3 navbarButtons">
@@ -71,11 +71,8 @@
         </section>
         <!-- Hero Section Ends -->
 
-
         <!-- Floating Image bottom -->
         <img class="ovalBaseImage  position-absolute end-0 p-0" src="../ASSETS/ovalHeroBase.png" alt="floating oval">
-
-
 
         <!-- Analytics Section  -->
         <section class="analyticsSection">
@@ -136,7 +133,7 @@
 
             <!-- Grid Cards Area -->
             <div class="container">
-                <div class="row g-5 g-lg-4 g-xl-5 ms-lg-3  ms-xl-5 gridCardArea">
+                <div class="row g-5 g-lg-4 g-xl-5 ms-lg-3 ms-xl-5 me-xl-5 gridCardArea">
                     <div class="col-12 col-md-6 col-lg-4 text-center">
                         <div class="card gridCard">
                             <div class="card-body gridCardContent">
@@ -206,6 +203,9 @@
                             blockchains to make that data accessible is the next step.</p>
                         <img class="barImage" src="../ASSETS/rectangleBar.png" alt="Rectangle Bar">
                     </div>
+                    <span>
+                        <img class="position-absolute floatimageLeft float-lg-start " src="../ASSETS/ovalBaseLarge.png"alt="Semi-CircleImage">
+                    </span>
                 </div>
 
                 <div class="row mt-5">
@@ -219,13 +219,10 @@
                     </div>
                 </div>
                 <!-- Floating Images  -->
-                <img class="position-absolute floatimageLeft float-lg-start " src="../ASSETS/ovalBaseLarge.png"
-                    alt="Semi-CircleImage">
                 <img class="floatimageRight position-absolute float-end" src="../ASSETS/ovalBaseLargeRight.png" alt="">
             </div>
         </section>
         <!-- Info Section Ends -->
-
 
         <!-- Live Product Section Starts -->
         <section class="liveProductSection">
@@ -234,7 +231,7 @@
                     <div class="col d-flex flex-column-reverse flex-md-row justify-content-between align-items-center">
                         <h5 class="liveHeading text-capitalize position-relative p-0">
                             Live Prouduct
-                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-success rounded-circle livedot"></span>
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-success rounded-circle livedot"></span>
                         </h5> 
                         <button class="chartsButton text-uppercase">go to charts  <img class="img-fluid chartsButtonImg" src="../ASSETS/leftArrow.png" width="26px" height="26px" alt="arrowImage"></button>
                     </div>
@@ -248,8 +245,9 @@
          <section class="carouselSection">
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-12 col-lg-5">
-                        <div id="carouselExampleFade" class="carousel slide">
+                        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
                                 <div class="carousel-item active carouselItem text-capitalize">
                                     <h6 class="carouselHeading">Volume Profile</h6>
@@ -266,12 +264,13 @@
                             </div>
                             <div>
                                 <button class="carouselControlIconPrevious" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="carousel-control-prev-icon h-100" aria-hidden="true"></span>
                                 </button>
                                 <button class="carouselControlIconNext" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="carousel-control-next-icon h-100" aria-hidden="true"></span>
                                 </button>
                             </div>
+                             <div class="carouselCounter textPrimary" id="carouselCounter">1/3</div>
                         </div>
                     </div>
 

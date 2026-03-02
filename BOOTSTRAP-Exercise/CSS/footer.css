@@ -6,31 +6,25 @@
     right: 0;
     left:0
 }
-
 .footerSection .brandImage{
     width: 60px;
     height: 25px;
 }
-
 .footerSection .footerNavigationLinks {
     color: var(--bs-footer-link-text-color);
     padding: 8px 10px;
     text-decoration: none;
 }
-
 .footerSection .footerNavigationLinks:hover{
     color: var(--bs-text-active-color);
 }
-
 .footerSection .footerIcon {
     color: var(--bs-footer-icon-color);
     font-size: 20px;
 }
-
 .footerSection .footerIcon:hover{
     color: var(--bs-text-active-color)
 }
-
 @media screen and (max-width:768px) {
 
     /* Footer Section */
@@ -51,16 +45,9 @@
 
     }
 }
-
-
-@media screen and (min-width:769px) and (max-width:991px){
+@media screen and (min-width:769px) and (max-width:992px){
 
     /* Footer section */
-  
-    .footerSection{
-        position: relative;
-    }
-
     .footerSection .footerNav {
         margin: 30px auto;
         gap: 8px;
@@ -74,30 +61,17 @@
     }
 
 }
-
-
-@media screen and (width:768px) and (max-height:1024px){
-
-    /* Footer Section */
-    .footerSection {
-        position: relative;
-    }
-
-}
-
 @media screen and (width:1024) and (max-height:600px){
     .footerSection {
         position: relative;
         bottom: 0;
     }
 }
-
 @media screen and (min-width:1280px) and (max-height:800px){
     .footerSection{
         position: relative;
     }
 }
-
 @media screen and (min-width:912px) and (max-width:1024px) and (min-height: 1366px) {
     .footerSection .footerIconSection{
         display: flex;
@@ -105,7 +79,6 @@
         align-items: center;
     }
 }
-
 @media screen and (min-width:769px) and (max-width:991px) and (max-height:930px){    
     .footerSection{
         position: relative;
