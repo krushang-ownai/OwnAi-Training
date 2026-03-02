@@ -1,0 +1,72 @@
+@import url(../CSS/style.css);
+@import url(../CSS/header.css);
+@import url(../css/footer.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-inter-font-family);
+    background-color: var(--bs-bg-secondary-color);
+}
+
+.textPrimary{
+    color: var(--bs-text-primary-color);
+}
+
+.roadmapLayout{
+    background-color: var(--bs-bg-secondary-color);
+}
+
+.roadmapLayout .roadmapHeroSection{
+    margin: 60px;
+}
+
+.roadmapLayout .roadmapHeroSection .heroText{
+    gap: 25px;
+}
+
+.roadmapLayout .roadmapHeroSection .heroText .heroTextHeading{
+    font-size: 48px;
+    font-weight: 600;
+    width: 70%;
+    text-align: left;
+    color: var(--bs-text-primary-color);
+}
+
+.roadmapLayout .roadmapHeroSection .heroText .heroTextDescription{
+    font-size: 18px;
+    font-weight: 300;
+    width: 40%;
+    text-align: left;
+    color: var(--bs-card-text-gray-color);
+}
+
+.roadmapLayout .roadmapHeroSection .heroText .heroTextButton{
+    background-image: linear-gradient(to right, var(--bs-btn-bg-gradient-primary-color), var(--bs-btn-bg-gradient-primary-color));
+    border: 1px solid var(--bs-btn-primary-border-color);
+    border-radius: 12px;
+    padding: 18px 80px;
+    color: var(--bs-text-primary-color);
+    font-size: 24px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:576px) {
+    .roadmapLayout .roadmapHeroSection{
+        margin-top: 100px;
+    }
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextHeading{
+        font-size: 24px;
+        width: auto;
+    }
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextDescription{
+        font-size: 15px;
+        width: auto;
+    }
+    .roadmapLayout .roadmapHeroSection .heroText .heroTextButton{
+        padding: 12px 60px;
+        font-size: 16px;
+    }
+}
